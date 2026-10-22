@@ -48,7 +48,6 @@ function configure_memory_parameters() {
     MemTotal=${MemTotalStr:16:8}
     
     echo 100 > /proc/sys/vm/swappiness
-    echo 100 > /proc/sys/vm/direct_swappiness
 
     # This oneshot can be started in charger mode and again after boot. Never
     # format an active swap device a second time.
